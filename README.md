@@ -23,14 +23,23 @@ code（编码）:
 
 
 import  random
+
 chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789'
+
 number = input('number of passwords?')
+
 number = int(number)
+
 length = input('password length?')
+
 length = int(length)
 
 for p in range(number):
+
     password = ''
+    
     for c in range(length):
+    
         password += random.choice(chars)
+        
     print(password)
